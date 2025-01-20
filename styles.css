@@ -1,0 +1,91 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Arial", sans-serif;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+
+#background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.chat-messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.message {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 70%;
+}
+
+.user-message {
+  background-color: #4a90e2;
+  color: white;
+  align-self: flex-end;
+}
+
+.genie-message {
+  background-color: #f0e68c;
+  color: #333;
+  align-self: flex-start;
+}
+
+.input-area {
+  display: flex;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.input-area input {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.input-area button {
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.typing-indicator {
+  padding: 10px;
+  color: #666;
+  font-style: italic;
+}
+
