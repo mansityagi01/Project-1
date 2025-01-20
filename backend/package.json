@@ -1,0 +1,14 @@
+{
+  "name": "genie-chat-app",
+  "version": "1.0.0",
+  "description": "A simple Node.js backend for OpenAI chat integration",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  }
+}
